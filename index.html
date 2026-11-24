@@ -207,6 +207,12 @@ section{padding-block:clamp(64px,10vw,120px)}
 .tile.in .lvl i.f{background:var(--gold)}
 .tile.in .lvl i.f:nth-child(2){transition-delay:.12s}.tile.in .lvl i.f:nth-child(3){transition-delay:.24s}
 
+/* projects + looking for */
+.proj{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:16px}
+.proj .body{font-size:1rem}
+.seek{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,5vw,64px);align-items:start}
+@media (max-width:860px){.proj,.seek{grid-template-columns:minmax(0,1fr)}}
+
 /* contact */
 .contact{position:relative;overflow:hidden;border-radius:32px;padding:clamp(32px,6vw,72px);background:var(--accent);color:var(--accent-fg);text-align:center;display:flex;flex-direction:column;align-items:center;gap:18px;box-shadow:var(--shadow-lg)}
 .contact::before{content:"";position:absolute;inset:-40%;background:conic-gradient(from var(--ang,0deg) at 50% 50%,transparent,color-mix(in srgb,var(--gold) 35%,transparent),transparent 40%);animation:spin 14s linear infinite;opacity:.6;pointer-events:none}
@@ -281,6 +287,7 @@ html[lang="en"] [data-l="en"]{display:revert}
       <div class="cta-row">
         <a class="btn" href="#yhteys"><span data-l="fi">Ota yhteyttä</span><span data-l="en">Get in touch</span></a>
         <a class="btn ghost" href="https://www.linkedin.com/in/onni-pakkala" target="_blank" rel="noopener">LinkedIn <span class="arr">↗</span></a>
+        <a class="btn ghost" href="https://github.com/onnipakkala" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
       </div>
       <div class="badges">
         <span class="badge"><i></i><span data-l="fi">Espoo</span><span data-l="en">Espoo, Finland</span></span>
@@ -360,18 +367,18 @@ html[lang="en"] [data-l="en"]{display:revert}
           <div class="card-top"><h3 class="h3">Media Area Volunteer</h3><span class="when"><span data-l="fi">Marraskuu 2026</span><span data-l="en">Nov 2026</span></span></div>
           <div class="org">Slush</div>
           <ul data-l="fi">
-            <li>Järjestin maailman johtavaa startup-tapahtumaa.</li>
-            <li>Palvelin maailman suurimpien medioiden edustajia, kuten New York Timesia.</li>
-            <li>Järjestin toimittajille tapaamisia johtavien startup-sijoittajien ja -yrittäjien kanssa.</li>
-            <li>Toimin yhteyshenkilönä toimittajien ja tapahtuman järjestäjien välillä tapahtumapäivien aikana.</li>
+            <li>Toimin osana Slushin Media Area -tiimiä.</li>
+            <li>Työskentelin kansainvälisten median edustajien kanssa.</li>
+            <li>Rakensin yhteyksiä startup-yrittäjiin, sijoittajiin ja media-ammattilaisiin.</li>
+            <li>Opin maailmanlaajuisesta startup- ja pääomasijoitusekosysteemistä.</li>
           </ul>
           <ul data-l="en">
-            <li>Helped run the world's leading startup event.</li>
-            <li>Served representatives of the world's largest media outlets, such as The New York Times.</li>
-            <li>Arranged meetings between journalists and leading startup investors and founders.</li>
-            <li>Acted as the contact person between journalists and event organisers during the event days.</li>
+            <li>Worked as part of the Slush Media Area team.</li>
+            <li>Worked with international media representatives.</li>
+            <li>Built connections with startup founders, investors and media professionals.</li>
+            <li>Learned about the global startup and venture capital ecosystem.</li>
           </ul>
-          <ul class="tags"><li><span data-l="fi">Tapahtumatuotanto</span><span data-l="en">Event Production</span></li><li><span data-l="fi">Asiakaspalvelu</span><span data-l="en">Customer Service</span></li><li><span data-l="fi">Tiimityö</span><span data-l="en">Teamwork</span></li></ul>
+          <ul class="tags"><li><span data-l="fi">Verkostoituminen</span><span data-l="en">Networking</span></li><li><span data-l="fi">Pääomasijoittaminen</span><span data-l="en">Venture Capital</span></li><li><span data-l="fi">Kansainvälinen ympäristö</span><span data-l="en">International Environment</span></li></ul>
         </article>
       </li>
       <li class="step">
@@ -468,7 +475,7 @@ html[lang="en"] [data-l="en"]{display:revert}
       <article class="tile">
         <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></span>
         <h3><span data-l="fi">Työkalut</span><span data-l="en">Tools</span></h3>
-        <ul><li>Microsoft Excel</li><li>Microsoft 365</li><li><span style="color:inherit;text-align:left"><span data-l="fi">Tekoälytyökalut</span><span data-l="en">AI tools</span></span><span>Claude, Lovable</span></li></ul>
+        <ul><li>Microsoft Excel</li><li data-l="fi">Pivot-taulukot</li><li data-l="en">Pivot tables</li><li data-l="fi">Data-analyysi</li><li data-l="en">Data analysis</li><li>SAP</li><li>Microsoft 365</li><li><span style="color:inherit;text-align:left"><span data-l="fi">Tekoälytyökalut</span><span data-l="en">AI tools</span></span><span>Copilot, Claude, ChatGPT</span></li></ul>
       </article>
       <article class="tile">
         <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg></span>
@@ -484,6 +491,45 @@ html[lang="en"] [data-l="en"]{display:revert}
   </div>
 </section>
 
+<section id="projektit" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow"><span data-l="fi">Projektit</span><span data-l="en">Projects</span></p>
+      <h2 class="h2"><span data-l="fi">Sijoittaminen</span><span data-l="en">Investing</span></h2>
+    </div>
+    <div class="proj">
+      <article class="tile">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-6"/><path d="M15 8h5v5"/></svg></span>
+        <h3><span data-l="fi">Oma sijoitussalkku</span><span data-l="en">Personal investment portfolio</span></h3>
+        <p class="body" data-l="fi">Olen rakentanut omaa sijoitussalkkuani useiden vuosien ajan. Sijoitan osakkeisiin ja rahastoihin sekä seuraan aktiivisesti yrityksiä, markkinoita ja taloutta. Minua kiinnostavat erityisesti yritysten liiketoimintamallit, arvonmääritys ja pitkän aikavälin omistaminen.</p>
+        <p class="body" data-l="en">I have managed my personal investment portfolio for several years, investing in equities and funds. I actively follow companies, markets and economic developments, with a particular interest in business models, valuation and long-term investing.</p>
+      </article>
+      <article class="tile">
+        <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg></span>
+        <h3><span data-l="fi">Painopisteet</span><span data-l="en">Focus areas</span></h3>
+        <ul data-l="fi"><li>Osakkeet ja rahastot</li><li>Liiketoimintamallit</li><li>Arvonmääritys</li><li>Pitkän aikavälin omistaminen</li></ul>
+        <ul data-l="en"><li>Equities &amp; funds</li><li>Business models</li><li>Valuation</li><li>Long-term investing</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="etsin">
+  <div class="wrap">
+    <div class="seek">
+      <div class="sec-head" style="margin-bottom:0">
+        <p class="eyebrow"><span data-l="fi">Mitä etsin</span><span data-l="en">What I'm looking for</span></p>
+        <h2 class="h2"><span data-l="fi">Seuraava askel.</span><span data-l="en">The next step.</span></h2>
+      </div>
+      <div>
+        <p class="body" data-l="fi">Etsin mahdollisuuksia kehittää osaamistani erityisesti sijoittamisen, yritysanalyysin, rahoituksen ja liiketoiminnan parissa. Olen kiinnostunut harjoittelu- ja osa-aikaisista tehtävistä sekä projekteista, joissa voin oppia kokeneemmilta ammattilaisilta ja tuoda samalla oman panokseni tiimiin.</p>
+        <p class="body" data-l="en">I am looking for opportunities to develop my skills, particularly in investing, company analysis, finance and business. I am interested in internships, part-time roles and projects where I can learn from more experienced professionals while contributing to the team.</p>
+        <ul class="tags"><li><span data-l="fi">Harjoittelut</span><span data-l="en">Internships</span></li><li><span data-l="fi">Osa-aikatyö</span><span data-l="en">Part-time roles</span></li><li><span data-l="fi">Projektit</span><span data-l="en">Projects</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="yhteys" style="padding-top:0">
   <div class="wrap">
     <div class="contact">
@@ -493,6 +539,7 @@ html[lang="en"] [data-l="en"]{display:revert}
       <div class="cta-row" style="justify-content:center;animation:none">
         <a class="btn" id="mailBtn" href="mailto:onni.pakkala@gmail.com">onni.pakkala@gmail.com</a>
         <a class="btn ghost" href="https://www.linkedin.com/in/onni-pakkala" target="_blank" rel="noopener">LinkedIn <span class="arr">↗</span></a>
+        <a class="btn ghost" href="https://github.com/onnipakkala" target="_blank" rel="noopener">GitHub <span class="arr">↗</span></a>
       </div>
       <p class="copy-note" id="copyNote" aria-live="polite"></p>
     </div>
@@ -624,7 +671,7 @@ html[lang="en"] [data-l="en"]{display:revert}
 
   /* Materialize things below the first screen */
   if('IntersectionObserver' in window&&!reduceMotion.matches){
-    const targets=document.querySelectorAll('.sec-head, .about .body, .stat, .step, .tile, .contact');
+    const targets=document.querySelectorAll('.sec-head, .about .body, .seek .body, .stat, .step, .tile, .contact');
     const ro=new IntersectionObserver(es=>es.forEach(e=>{ if(!e.isIntersecting) return; e.target.classList.add('rv-in'); e.target.classList.remove('rv'); ro.unobserve(e.target); }),{rootMargin:'0px 0px -8% 0px'});
     let k=0;
     targets.forEach(t=>{ if(t.getBoundingClientRect().top>innerHeight){ t.classList.add('rv'); t.style.transitionDelay=(k++%3)*70+'ms'; ro.observe(t); } });
